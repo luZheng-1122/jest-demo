@@ -1,0 +1,18 @@
+{
+  "name": "zhenglu",
+  "version": "1.0.0",
+  "description": "unit testing with jest",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/nengliangZ/jest-demo",
+    "type": "git"
+  },
+  "author": "Lu",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^21.1.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
