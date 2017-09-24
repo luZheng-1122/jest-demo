@@ -30,6 +30,18 @@ Add the following section to your package.json:
 
 Since this demo is more about testing, so it does not include react setup.
 
+### install babel
+```
+yarn add --dev babel-core babel-preset-env
+```
+then add ".babelrc":
+```
+{
+    "presets" : ["env"]
+}
+```
+
+
 ## Simple Start
 
 Let's create a .js file and write a normal function, in our case, a 'sum.js' file in root directory.
@@ -40,7 +52,7 @@ function sum(a, b) {
 module.exports = sum;
 ```
 
-Then, create a directory called '__test__', and create a file named sum.test.js.
+Then, create a directory called `__test__`, and create a file named sum.test.js.
 ```
 const sum = require('../sum'); //pay attention to the path
 
@@ -54,4 +66,23 @@ Finally, run **yarn test** to get our test result:
 $ jest
  PASS  __test__/sum.test.js
   ✓ adds 1 + 2 to equal 3 (7ms)
+```
+
+## code coverage
+> code coverage is basically about how much our code is been run.
+```
+"scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watch" //watch mode to quickly respond to your change
+  }
+```
+
+if some files are not been imported at all, jest will report that as well, but need to add this:
+
+```
+"jest": {
+    "collectCoverageFrom": [
+      "*.js"
+    ]
+  }
 ```

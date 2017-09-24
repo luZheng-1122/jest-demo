@@ -10,9 +10,17 @@
   "author": "Lu",
   "license": "MIT",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
     "jest": "^21.1.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "*.js"
+    ]
   }
 }
