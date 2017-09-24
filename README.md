@@ -86,3 +86,18 @@ if some files are not been imported at all, jest will report that as well, but n
     ]
   }
 ```
+
+## unit testing
+unit testing is for testing a single function whether could return a expected result.
+you need to write test case for every possible conditions and give the input and the expected output.
+
+## end-to-end test
+> End-to-end testing is a methodology used to test whether the flow of an application is performing as designed from start to finish. The purpose of carrying out end-to-end tests is to identify system dependencies and to ensure that the right information is passed between various system components and systems.
+### install [cypress](https://docs.cypress.io/guides/getting-started/installing-cypress.html#npm-install)
+```
+npm install cypress --save-dev
+```
+and open it:
+```
+$(npm bin)/cypress open
+```

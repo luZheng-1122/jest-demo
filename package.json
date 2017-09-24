@@ -12,6 +12,7 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "cypress": "^0.20.1",
     "jest": "^21.1.0"
   },
   "scripts": {
