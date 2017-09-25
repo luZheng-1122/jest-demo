@@ -93,6 +93,7 @@ you need to write test case for every possible conditions and give the input and
 
 ## end-to-end test
 > End-to-end testing is a methodology used to test whether the flow of an application is performing as designed from start to finish. The purpose of carrying out end-to-end tests is to identify system dependencies and to ensure that the right information is passed between various system components and systems.
+
 ### install [cypress](https://docs.cypress.io/guides/getting-started/installing-cypress.html#npm-install)
 ```
 npm install cypress --save-dev
@@ -101,3 +102,22 @@ and open it:
 ```
 $(npm bin)/cypress open
 ```
+
+### smoke test
+
+> Smoke testing covers most of the major functions of the software but none of them in depth. The result of this test is used to decide whether to proceed with further testing. If the smoke test passes, go ahead with further testing. If it fails, halt further tests and ask for a new build with the required fixes. If an application is badly broken, detailed testing might be a waste of time and effort.
+
+Examples of smoke test: 
+1. title
+1. page route
+
+
+### post_spec test
+> test for 'post functions'
+
+### user_spec test
+> test from user's prospective, need to think of what kinds of things does a user do that we want to make sure the system doesn't break?
+
+Examples of user_spec test: 
+1. verify login
+1. modify profile
